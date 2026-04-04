@@ -1,0 +1,32 @@
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	fortran/DGF_test1_lensedCls.dat
+	fortran/DGF_test1_lenspotentialCls.dat
+	fortran/DGF_test1_matterpower.dat
+	fortran/DGF_test1_params.ini
+	fortran/DGF_test1_scalCls.dat
+	fortran/DGF_test1_scalarCovCls.dat
+	fortran/DGF_test1_transfer_out.dat
+	fortran/build_dgf.py
+	fortran/dgf_run_
+	fortran/dgf_run_matterpower.dat
+	fortran/dgf_run_params.ini
+	fortran/dgf_run_transfer_out.dat
+	fortran/generate_params_DGF.py
+	fortran/matterpower_1.dat
+	fortran/test1_params.ini
+	fortran/transfer_1.dat
+	inifiles/params_DGF.ini
+	inifiles/params_DGF_Final.ini
+	inifiles/params_DGF_LastGo.ini
+	inifiles/params_DGF_Parametric.ini
+	inifiles/params_DGF_True.ini
+	inifiles/params_DGF_Ultimate.ini
+	inifiles/params_MG_DGF.ini
+	inifiles/params_backup.ini
+	inifiles/params_dgf_clean.ini
+
+nothing added to commit but untracked files present (use "git add" to track)

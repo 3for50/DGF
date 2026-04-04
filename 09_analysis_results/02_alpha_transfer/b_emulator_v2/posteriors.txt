@@ -1,0 +1,12 @@
+α_B GPU Chain v2 (merged 2500 training points)
+============================================================
+               H0 = 65.7190 ± 0.3696
+        omega_cdm = 0.1194 ± 0.0009
+             logA = 3.0627 ± 0.0295
+    alpha_B_scale = 1.1106 ± 0.0933
+         A_planck = 0.9920 ± 0.0154
+
+  α = dH₀/dα_B = 1.923
+  r(H₀, α_B)   = 0.4853
+  Runtime: 46s
+  Training: 2500 points, NN err 2.6068%

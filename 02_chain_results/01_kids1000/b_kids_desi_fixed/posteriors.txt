@@ -1,0 +1,28 @@
+=================================================================
+  DGF KiDS-1000 + DESI 2024 DR1 BAO — Final Posteriors
+  Converged: R-1 < 0.01 | 13,600 accepted steps
+  Zero tuned gravity parameters
+  DGF alphas: alpha_K=4.005, alpha_B=1.018, alpha_M=0, alpha_T=0
+  Fixed: H0=72.1, omega_b=0.0224, n_s=0.966, tau=0.054
+  Background: wowa w0=-0.933, Omega_DE=0.685
+=================================================================
+
+Parameter            Mean        Std     Median    68% low   68% high
+-----------------------------------------------------------------
+omega_cdm          0.3393     0.0085     0.3395     0.3335     0.3457
+ln10A_s            2.0042     0.0119     2.0026     2.0007     2.0068
+A_bary             4.9413     2.9341     4.9101     1.4180     8.4712
+A_IA               0.1002     3.4835     0.1271    -4.0222     4.1652
+sigma8             0.9336     0.0126     0.9337     0.9229     0.9447
+Omega_m            0.6957     0.0163     0.6961     0.6845     0.7080
+S8                 1.4218     0.0351     1.4223     1.3942     1.4513
+
+chi2_KiDS (mean)  = 363.4  /  270 data points
+chi2_BAO  (mean)  = 10506.0  /  12 data points
+chi2_total        = 10869.4
+Effective samples = 63027
+Accepted steps    = 13600
+
+Likelihoods: KiDS-1000 (Asgari+21) + DESI 2024 DR1 BAO (2404.03002)
+Theory: CosmoPower emulator (hi_class + CAMB HMcode + ReACT eftus)
+Sampler: cobaya MCMC, seed=42

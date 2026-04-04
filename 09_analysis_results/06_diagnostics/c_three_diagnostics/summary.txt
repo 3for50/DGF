@@ -1,0 +1,14 @@
+THREE DIAGNOSTICS
+==================================================
+
+Task 1: propto_omega rdrag
+  propto_omega fails in hi_class
+
+Task 2: fσ8
+  Δχ² = +4.43
+
+Task 3: Pantheon+ by bin
+  z<0.1: N=630, Δχ²=+0.1
+  0.1-0.5: N=750, Δχ²=-0.3
+  0.5-1.0: N=185, Δχ²=+0.0
+  z>1.0: N=25, Δχ²=-0.0

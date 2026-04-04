@@ -1,0 +1,16 @@
+THREE QUICK TESTS — DGF
+=================================================================
+
+TEST 1: Coupling stability
+  c=1.495: STABLE, G_eff(0.5)=+5.8%, sig8=0.8295
+  c=phi: STABLE, G_eff(0.5)=+6.6%, sig8=0.8345
+  c=1.750: STABLE, G_eff(0.5)=+7.4%, sig8=0.8407
+
+TEST 2: sigma8 separation
+  sig8_DGF/sig8_LCDM at z=0.5: 0.9946
+  sqrt(G_eff) at z=0.5: 1.0324
+
+TEST 3: A_lens
+  DGF A_lens (l=2-100): 1.139
+  Planck observed: 1.18 +/- 0.065
+  Tension: 0.6 sigma

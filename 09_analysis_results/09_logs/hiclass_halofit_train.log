@@ -1,0 +1,20 @@
+Loading hi_class halofit training data...
+  Train: 500, Test: 100, z: 8, k: 300
+Training z=0.0 (1/8)... median=0.296%  99th=1.61%
+Training z=0.5 (2/8)... median=0.344%  99th=1.91%
+Training z=1.0 (3/8)... median=0.355%  99th=2.15%
+Training z=1.5 (4/8)... median=0.333%  99th=2.26%
+Training z=2.0 (5/8)... median=0.472%  99th=4.77%
+Training z=2.5 (6/8)... median=0.675%  99th=15.48%
+Training z=3.0 (7/8)... median=0.574%  99th=46.28%
+Training z=3.5 (8/8)... median=0.450%  99th=12.82%
+
+=== Training complete ===
+  z0.0: median 0.296%  99th 1.61%
+  z0.5: median 0.344%  99th 1.91%
+  z1.0: median 0.355%  99th 2.15%
+  z1.5: median 0.333%  99th 2.26%
+  z2.0: median 0.472%  99th 4.77%
+  z2.5: median 0.675%  99th 15.48%
+  z3.0: median 0.574%  99th 46.28%
+  z3.5: median 0.450%  99th 12.82%

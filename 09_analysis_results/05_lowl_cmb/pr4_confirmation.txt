@@ -1,0 +1,22 @@
+Task 5 — Planck PR4 Low-l TT Comparison
+========================================
+
+Result: PR4 = PR3 for low-l TT. Identical chi2.
+
+Tristram et al. (2024, A&A): "The only part that still relies on PR3
+is the low-l temperature likelihood, Commander, as we do not anticipate
+significant improvements at large scales in temperature between PR3 and PR4."
+
+PR4 improvements are:
+  - High-l: HiLLiPoP replaces plik (l > 30)
+  - Polarization: LoLLiPoP replaces simall (low-l EE/BB)
+  - Low-l TT: UNCHANGED (same Commander data)
+
+Therefore:
+  chi2_DGF  (l=2-30) = 66.49  (same as PR3)
+  chi2_LCDM (l=2-30) = 55.998 (same as PR3)
+  Delta_chi2 = -10.49 (LCDM favoured, same as PR3)
+  DGF sign pattern: unchanged
+
+The H0 shift (PR4: 67.49 vs PR3: 67.36) comes entirely from
+the high-l likelihood change, not from low-l data.

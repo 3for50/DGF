@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.hdf5
+*.npy
+!04_alpha_tables/*.dat
+.DS_Store

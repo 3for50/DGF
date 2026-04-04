@@ -1,0 +1,18 @@
+THREE EXTRACTION TASKS v2
+==================================================
+
+Task 1: w0 degeneracy
+  r(w0,sig8) = 0.0822
+  r(w0,Om) = 0.2241
+  sig8 in chain: 0.587 (never reaches 0.967)
+
+Task 2: G_eff at cluster z
+  Median z = 0.296
+  G_eff = 1.0770 (+7.7%)
+  Within cluster 1σ: NO
+
+Task 3: Pure braiding at Planck best-fit
+  TT l=2: -9.28%
+  TT mean l=3-10: +15.00%
+  pp l=2: +69.55%
+  pp mean l=3-10: +57.80%

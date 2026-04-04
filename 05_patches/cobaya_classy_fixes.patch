@@ -1,0 +1,23 @@
+--- cobaya/theories/classy/classy.py.orig
++++ cobaya/theories/classy/classy.py
+@@ -315,6 +315,8 @@
+         self.classy = self.classy_module.Class()
+         super().initialize()
++        # Parameters to ignore (not passed to CLASS) — DGF fix for custom params
++        _ign = self.extra_args.pop('_ignore_input', '')
++        self._ignore_params = set(_ign.split(',')) if _ign else set()
+         # Add general CLASS stuff
+         self.extra_args["output"] = self.extra_args.get("output", "")
+@@ -648,7 +650,10 @@
+     def set(self, params_values_dict):
+-        args = {self.translate_param(p): v for p, v in params_values_dict.items()}
++        # Filter out parameters CLASS doesn't understand (e.g. H0_matter)
++        _ignore = getattr(self, '_ignore_params', set())
++        args = {self.translate_param(p): v for p, v in params_values_dict.items()
++                if p not in _ignore}
+         args.update(self.extra_args)
++        # Fix comma-separated output flags for hi_class compatibility
++        if "output" in args:
++            args["output"] = " ".join(set(str(args["output"]).replace(",", " ").split()))
+         self.param_dict_debug("Setting parameters: %r", args)
+         self.classy.set(**args)

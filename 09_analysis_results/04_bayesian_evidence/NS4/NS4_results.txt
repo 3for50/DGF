@@ -1,0 +1,40 @@
+NS4 �� Final Bayesian Evidence
+============================================================
+
+ln(Z_DGF)       = -104.98
+ln(Z_LCDM)      = -185.51
+ln(Z_DGF+B3)    = -105.12
+ln(Z_DGF_full)  = -106.85
+
+ln(B) baseline:  +80.53 [Decisive]
+ln(B) +B3:       +80.39 [Decisive]
+ln(B) full:      +78.66 [Decisive]
+
+
+NS4a_DGF:
+  ln(Z) = -104.98, time = 45s
+            H0 = 65.7774 +/- 0.2873
+     omega_cdm = 0.1190 +/- 0.0008
+          logA = 3.0760 +/- 0.0269
+      A_planck = 0.9858 +/- 0.0140
+
+NS4b_LCDM:
+  ln(Z) = -185.51, time = 55s
+            H0 = 67.0050 +/- 0.3200
+     omega_cdm = 0.1174 +/- 0.0009
+          logA = 3.1704 +/- 0.0252
+      A_planck = 0.9473 +/- 0.0121
+
+NS4c_DGF_B3:
+  ln(Z) = -105.12, time = 48s
+            H0 = 65.8026 +/- 0.2827
+     omega_cdm = 0.1189 +/- 0.0008
+          logA = 3.0763 +/- 0.0269
+      A_planck = 0.9856 +/- 0.0140
+
+NS4d_DGF_full:
+  ln(Z) = -106.85, time = 47s
+            H0 = 65.8054 +/- 0.2824
+     omega_cdm = 0.1189 +/- 0.0008
+          logA = 3.0760 +/- 0.0270
+      A_planck = 0.9857 +/- 0.0141

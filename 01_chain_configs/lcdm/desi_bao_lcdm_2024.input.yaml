@@ -1,0 +1,61 @@
+theory:
+  classy:
+    extra_args:
+      output: mPk
+      non_linear: halofit
+      z_max_pk: 2.0
+      P_k_max_1/Mpc: 1.0
+likelihood:
+  bao.desi_2024_bao_all: null
+params:
+  omega_b:
+    prior:
+      min: 0.019
+      max: 0.026
+    proposal: 0.0002
+    latex: \Omega_b h^2
+  omega_cdm:
+    prior:
+      min: 0.08
+      max: 0.2
+    proposal: 0.002
+    latex: \Omega_c h^2
+  H0:
+    prior:
+      min: 60
+      max: 80
+    proposal: 1.0
+    latex: H_0
+  n_s:
+    prior:
+      min: 0.9
+      max: 1.1
+    proposal: 0.005
+    latex: n_s
+  A_s:
+    prior:
+      min: 1.5e-09
+      max: 3.0e-09
+    proposal: 1.0e-10
+    latex: A_s
+  tau_reio:
+    value: 0.054
+    latex: \tau_{reio}
+  N_ur:
+    value: 2.0328
+  N_ncdm:
+    value: 1
+  m_ncdm:
+    value: 0.06
+  T_ncdm:
+    value: 0.71611
+  omega_ncdm:
+    value: 0.00064
+sampler:
+  mcmc:
+    learn_proposal: true
+    max_samples: 20000
+    max_tries: 50000
+    seed: 42
+output: desi_bao_lcdm_2024
+packages_path: /home/joe-research/dgf_data

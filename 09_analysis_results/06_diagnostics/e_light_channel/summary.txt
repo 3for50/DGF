@@ -1,0 +1,12 @@
+LIGHT CHANNEL TESTS
+=======================================================
+
+TEST A: FRB H0 — Hybrid channel
+  All 5 FRB measurements sit within the LGI band
+  (67.4-71.55 km/s/Mpc)
+  Mean FRB H0: 71.8 +/- 4.6
+
+TEST B: Uncalibrated Pantheon+ SNe shape
+  DGF  (w0=-0.933): H0=80.00, chi2=631.0/19
+  LCDM (w0=-1.000): H0=80.00, chi2=718.3/19
+  Delta_chi2 = +87.30

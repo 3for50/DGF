@@ -1,0 +1,20 @@
+DGF MASTER FINDINGS — Publication-Grade Converged MCMC Chains
+=============================================================
+All chains: R-1 < 0.03, full posteriors + triangle plots + comparison plots
+
+01_kids1000/                 KiDS-1000 cosmic shear (5 tomographic bins)
+  a_emulator_only/           KiDS-1000 alone. S8=0.817+/-0.079, chi2/dof=0.96
+  b_kids_desi_fixed/         KiDS+DESI, H0/w0 fixed. First joint run.
+  c_kids_desi_v2/            KiDS+DESI publication. S8=0.689+/-0.038
+  d_kids_desi_w0free/        KiDS+DESI, w0 free. w0=-1.11+/-0.03, S8=0.593+/-0.043
+  e_hiclass_exact/           KiDS, hi_class exact Boltzmann (no emulator)
+
+02_desi_bao/                 DESI 2024 BAO distance measurements
+  a_h0free/                  H0 free. H0=67.1+/-0.7, chi2_BAO=14.8
+  b_w0h0free/                w0+H0 free. w0=-1.02+/-0.14, H0=69.3+/-3.8
+
+03_planck/                   Planck 2018 TTTEEE + low-l TT/EE
+  a_h0free/                  DGF hi_class, H0 free. H0=65.7+/-0.3
+
+All chains use DGF background: w0=-0.933, Omega_de=0.685, tabulated alphas.
+Fixed params unless noted: omega_b=0.02238, n_s=0.9660, tau=0.054.

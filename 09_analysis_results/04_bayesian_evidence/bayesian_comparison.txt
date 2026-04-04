@@ -1,0 +1,13 @@
+BAYESIAN MODEL COMPARISON: DGF vs LCDM
+=======================================================
+
+Pair 1: Δχ² = +12.0, ln(B) = +6.0 (Decisive)
+  DGF: chi2=92.7 (BAO=18.3 CMB=73.0 fσ8=1.4)
+  LCDM: chi2=104.7 (BAO=27.8 CMB=75.4 fσ8=1.5)
+
+Pair 2: Savage-Dickey
+  w0=-0.8793±0.0291
+  ln(B) at w0=-1: -5.3 (Decisive)
+  ln(B) at w0=-0.933: +1.6 (Substantial)
+
+Pair 3: ΔAIC=+12.0, ΔBIC=+12.0

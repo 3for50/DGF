@@ -1,0 +1,16 @@
+--- a/cobaya/theories/classy/classy.py
++++ b/cobaya/theories/classy/classy.py
+@@ -651,6 +651,9 @@
+         args = {self.translate_param(p): v for p, v in params_values_dict.items()}
+         args.update(self.extra_args)
+         # Generate and save
++        # Fix comma-separated output flags for hi_class compatibility
++        if "output" in args:
++            args["output"] = " ".join(set(str(args["output"]).replace(",", " ").split()))
+         self.param_dict_debug("Setting parameters: %r", args)
+         self.classy.set(**args)
+
+@@ -553,7 +556,7 @@
+-        self.extra_args["output"] = " ".join(set(self.extra_args["output"].split()))
++        self.extra_args["output"] = " ".join(set(self.extra_args["output"].replace(",", " ").split()))
+         self.check_no_repeated_input_extra()

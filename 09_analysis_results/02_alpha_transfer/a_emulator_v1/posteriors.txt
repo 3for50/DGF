@@ -1,0 +1,16 @@
+α_B GPU Chain — Transfer Coefficient Measurement
+============================================================
+Emulator: PCA+NN on hi_class C_l with varying α_B
+Likelihood: Planck plik_lite TTTEEE (simplified)
+Samples: 90000 post-burnin
+
+               H0 = 65.6051 ± 0.3563
+        omega_cdm = 0.1197 ± 0.0010
+             logA = 3.0875 ± 0.0463
+    alpha_B_scale = 0.9434 ± 0.4431
+         A_planck = 0.9788 ± 0.0226
+
+  α = dH₀/dα_B = 0.194 ± 0.003
+  r(H₀, α_B) = 0.2417
+
+  Runtime: 112s

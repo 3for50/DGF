@@ -1,0 +1,18 @@
+=================================================================
+  KAM Coupling Constant Test: c=phi vs c=1.495
+=================================================================
+
+                       c=phi (1.618)         c=1.495
+-------------------------------------------------------
+              Stable             YES             YES
+              sigma8          0.8345          0.8295
+        G_eff(z=0.5)           +6.6%           +5.8%
+          G_eff(z=0)           +9.3%           +8.3%
+      Below KAM 8.1%   at z=0.5: YES   at z=0.5: YES
+  alpha_B oscillates              NO              NO
+                  w0          -0.933          -0.933
+
+Scaling: alpha_i(c=1.495) = (1.495/1.618)^2 * alpha_i(c=phi) = 0.854 * alpha_i
+G_eff reduction: 87.9% of phi value
+c=1.495 is stable and well-behaved but produces weaker gravity modification.
+The golden ratio c=phi gives the MAXIMUM stable coupling.

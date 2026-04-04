@@ -1,0 +1,21 @@
+=================================================================
+  DGF KiDS-1000 — EXACT hi_class (no emulator)
+  Converged: R-1 < 0.02 | 2,560 accepted steps
+  Direct Boltzmann computation, zero approximation error
+=================================================================
+
+Param                Mean        Std     Median      68%lo      68%hi
+-----------------------------------------------------------------
+omega_cdm          0.1421     0.0152     0.1433     0.1266     0.1579
+ln10A_s            2.0988     0.1410     2.0717     1.9493     2.2515
+A_bary             5.0101     2.8953     4.9694     1.6181     8.4212
+A_IA              -0.0265     3.5768    -0.1440    -4.2845     4.3966
+sigma8             0.5796     0.0192     0.5797     0.5610     0.5984
+Omega_m            0.3164     0.0292     0.3187     0.2866     0.3469
+S8                 0.5948     0.0382     0.5963     0.5565     0.6332
+
+chi2_KiDS = 214.5 / 270
+chi2/dof  = 0.794
+
+A_bary = 5.01 ± 2.90  (was ~5.0 with emulator)
+Theory: Direct hi_class halofit (no emulator, no ReACT)

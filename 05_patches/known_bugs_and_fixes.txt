@@ -1,0 +1,66 @@
+DGF KNOWN BUGS AND FIXES
+=========================
+
+1. hi_class ln10A_s
+   BUG: hi_class v3.2 does not accept ln10A_s as input parameter
+   FIX: Use A_s directly: A_s = exp(ln10A_s) * 1e-10
+   WHERE: cobaya yaml params section
+
+2. hi_class output flags
+   BUG: cobaya generates comma-separated output flags, hi_class needs spaces
+   FIX: Patch classy.py set() to replace commas: args["output"].replace(",", " ")
+   WHERE: cobaya/theories/classy/classy.py line ~653
+
+3. hi_class expansion_smg parsing
+   BUG: Space-separated values parsed as 1 entry, needs commas
+   FIX: expansion_smg = '0.685, -0.933, 0.' (with commas)
+   WHERE: yaml extra_args
+
+4. Baryon feedback overflow (KiDS-1000)
+   BUG: np.exp(exponent) overflows for extreme A_bary values -> NaN -> chi2=2e30
+   FIX: np.clip(exponent, -50, 50) before np.exp()
+   WHERE: kids1000_cobaya.py baryon feedback function
+
+5. sigma8 units
+   BUG: Extra h^3 factor in P(k) integration gave sigma8=0.271 instead of 0.713
+   FIX: Integrate in h/Mpc units consistently, no extra h^3
+   WHERE: dgf_cosmopower_theory.py get_sigma8()
+
+6. rdrag 4.1% off
+   BUG: Eisenstein & Hu fitting formula gives 153 Mpc vs CAMB's 147.05 Mpc
+   FIX: Use CAMB for rdrag calculation, not E&H approximation
+   WHERE: dgf_cosmopower_theory.py, dgf_hiclass_theory.py
+
+7. get_Hubble units
+   BUG: get_Hubble(z) ignores units="1/Mpc" parameter, returns km/s/Mpc
+   FIX: Divide by c_km_s (299792.458) when units="1/Mpc"
+   WHERE: dgf_cosmopower_theory.py, dgf_hiclass_theory.py
+
+8. ReACT mymgF crash
+   BUG: mymgF case 7 returns 0, causing infinite root-finding loops
+   FIX: Fallback to unscreened (return 1.0) when mu() is undefined
+   WHERE: BeyondLCDM.cpp mymgF() case 7
+
+9. ReACT GSL spline crash
+   BUG: gsl_spline_init called with <3 points -> segfault
+   FIX: Guard: if (count < 3) return default
+   WHERE: SCOL.cpp spherical collapse solver
+
+10. SIGALRM deadlock
+    BUG: Python signal handlers blocked by CVODE C extension
+    FIX: Use pebble.ProcessPool (sends SIGKILL, not SIGALRM)
+    WHERE: Training data generation scripts
+
+11. cobaya custom parameters to CLASS
+    BUG: Cobaya sends all sampled params to CLASS, including custom ones (H0_matter)
+    FIX: Add _ignore_input to classy extra_args, patch set() to filter
+    WHERE: cobaya/theories/classy/classy.py (see patch)
+
+12. hi_class hmcode warning
+    BUG: "Currently HMcode is implemented only for Brans-Dicke" repeated
+    STATUS: Non-fatal warning, safe to ignore. hmcode still runs.
+
+13. PCA emulator negative A_planck
+    BUG: Emulator error let chain exploit A_planck < 0
+    FIX: Constrain A_planck prior to [0.9, 1.1]
+    WHERE: Chain yaml params section

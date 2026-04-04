@@ -1,0 +1,98 @@
+# ============================================================
+# J6 — Flash Field Equilibrium Test
+#
+# Light channel: H0 free, constrained by Planck TTTEEE + DESI BAO
+# Matter channel: H0_matter, Gaussian prior N(72.5, 1.5)
+# Derived: F_arithmetic, F_weighted
+# ============================================================
+
+theory:
+  classy:
+    path: /home/joe-research/hi_class
+    ignore_obsolete: true
+    extra_args:
+      _ignore_input: H0_matter
+      gravity_model: tabulated_alphas
+      alpha_functions_file: /home/joe-research/hi_class/dgf_background_alphas_tabfmt.dat
+      Omega_smg: -1
+      expansion_model: wowa
+      expansion_smg: '0.685, -0.933, 0.'
+      Omega_fld: 0
+      Omega_Lambda: 0
+      skip_stability_tests_smg: 'yes'
+      kineticity_safe_smg: 1e-4
+      cs2_safe_smg: 1e-4
+      N_ur: 2.0328
+      N_ncdm: 1
+      m_ncdm: 0.06
+      T_ncdm: 0.71611
+
+likelihood:
+  planck_2018_highl_plik.TTTEEE_lite: null
+  planck_2018_lowl.TT_clik: null
+  planck_2018_lowl.EE_clik: null
+  bao.desi_2024_bao_all: null
+
+params:
+  # ── Light channel: H0 free (CMB+BAO constrained) ──
+  H0:
+    prior: {min: 55.0, max: 85.0}
+    ref:   {dist: norm, loc: 65.9, scale: 1.0}
+    proposal: 0.5
+    latex: H_0
+
+  omega_cdm:
+    prior: {min: 0.01, max: 0.99}
+    ref:   {dist: norm, loc: 0.12, scale: 0.01}
+    proposal: 0.002
+    latex: \omega_{\rm cdm}
+
+  A_s:
+    prior: {min: 5e-10, max: 1e-8}
+    ref:   {dist: norm, loc: 2.1e-9, scale: 2e-10}
+    proposal: 1e-10
+    latex: A_s
+
+  # ── Matter channel: Gaussian prior only, not passed to theory ──
+  H0_matter:
+    prior: {dist: norm, loc: 72.5, scale: 1.5}
+    ref:   {dist: norm, loc: 72.5, scale: 1.5}
+    proposal: 0.5
+    latex: H_0^{\rm matter}
+
+  # ── Fixed DGF ──
+  omega_b:  {value: 0.02238280}
+  n_s:      {value: 0.9660499}
+  tau_reio: {value: 0.054}
+
+  # ── Derived ──
+  sigma8:
+    derived: true
+    latex: \sigma_8
+  Omega_m:
+    derived: true
+    latex: \Omega_m
+  S8:
+    derived: "lambda sigma8, Omega_m: sigma8 * (Omega_m/0.3)**0.5"
+    latex: S_8
+  F_arithmetic:
+    derived: "lambda H0, H0_matter: (H0 + H0_matter) / 2.0"
+    latex: \mathcal{F}_{\rm arith}
+  F_weighted:
+    derived: "lambda H0, H0_matter: (H0 * 27.7 + H0_matter * 0.444) / (27.7 + 0.444)"
+    latex: \mathcal{F}_{\rm weighted}
+
+sampler:
+  mcmc:
+    learn_proposal: true
+    learn_proposal_Rminus1_max: 2.0
+    max_samples: 20000
+    max_tries: 200000
+    Rminus1_stop: 0.03
+    Rminus1_cl_stop: 0.2
+    seed: 61
+    output_every: 120s
+    learn_every: 40d
+
+output: /home/joe-research/chains/dgf_J6_flash_field
+packages_path: /home/joe-research/dgf_data

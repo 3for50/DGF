@@ -1,0 +1,103 @@
+# CosmoPower GPU Chain — LCDM + Planck + DESI BAO
+# GPU-accelerated with CosmoPower emulator (O(10^4) speedup)
+
+theory:
+  cptheory.CosmoPower:
+    python_path: /home/joe-research/cobaya-cosmopower
+    network_path: "/home/joe-research/cosmopower_models/cosmopower/trained_models/CP_paper/CMB"
+    cmb_tt_nn_filename: "cmb_TT_NN"
+    cmb_te_pcaplusnn_filename: "cmb_TE_PCAplusNN"
+    cmb_ee_nn_filename: "cmb_EE_NN"
+    stop_at_error: False
+
+likelihood:
+  # Planck 2018 CMB
+  planck_2018_lowl.TT: null
+  planck_2018_lowl.EE: null
+  planck_2018_highl_plik.TTTEEE: null
+  planck_2018_lensing.clik: null
+  
+  # DESI 2024 BAO
+  bao.desi_2024_bao_all: null
+
+params:
+  # Cosmological parameters (6-parameter LCDM)
+  omega_b:
+    prior:
+      min: 0.019
+      max: 0.026
+    ref:
+      dist: norm
+      loc: 0.0224
+      scale: 0.0002
+    proposal: 0.0002
+    latex: \Omega_b h^2
+  
+  omega_cdm:
+    prior:
+      min: 0.08
+      max: 0.2
+    ref:
+      dist: norm
+      loc: 0.12
+      scale: 0.002
+    proposal: 0.002
+    latex: \Omega_c h^2
+  
+  H0:
+    prior:
+      min: 60
+      max: 80
+    ref:
+      dist: norm
+      loc: 67.4
+      scale: 1.0
+    proposal: 1.0
+    latex: H_0
+  
+  n_s:
+    prior:
+      min: 0.9
+      max: 1.1
+    ref:
+      dist: norm
+      loc: 0.966
+      scale: 0.005
+    proposal: 0.005
+    latex: n_s
+  
+  logA:
+    prior:
+      min: 2.5
+      max: 3.5
+    ref:
+      dist: norm
+      loc: 3.04
+      scale: 0.02
+    proposal: 0.02
+    latex: \ln(10^{10}A_s)
+  
+  A_s:
+    value: "lambda logA: 1e-10 * np.exp(logA)"
+    latex: A_s
+  
+  tau_reio:
+    prior:
+      min: 0.01
+      max: 0.1
+    ref:
+      dist: norm
+      loc: 0.054
+      scale: 0.007
+    proposal: 0.003
+    latex: \tau_{reio}
+
+sampler:
+  mcmc:
+    learn_proposal: true
+    max_samples: 20000
+    max_tries: 50000
+    seed: 42
+
+output: /home/joe-research/chains/cosmopower_lcdm_planck_desi
+packages_path: /home/joe-research/dgf_data

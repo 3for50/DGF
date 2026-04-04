@@ -1,0 +1,27 @@
+=================================================================
+  DGF KiDS-1000 Only — Final Posteriors
+  Converged: R-1 < 0.01 | chi2/dof = 0.959
+  Zero tuned gravity parameters
+  DGF alphas: alpha_K=4.005, alpha_B=1.018, alpha_M=0, alpha_T=0
+  Fixed: H0=72.1, omega_b=0.0224, n_s=0.966, tau=0.054
+  Background: wowa w0=-0.933, Omega_DE=0.685
+=================================================================
+
+Parameter            Mean        Std     Median    68% low   68% high
+-----------------------------------------------------------------
+omega_cdm          0.1945     0.0192     0.1952     0.1759     0.2130
+ln10A_s            2.0448     0.0434     2.0316     2.0081     2.0824
+A_bary             5.0954     2.8639     5.2029     1.6762     8.3878
+A_IA               0.0291     3.4762     0.0876    -4.0982     4.1487
+sigma8             0.6917     0.0376     0.6936     0.6554     0.7281
+Omega_m            0.4172     0.0370     0.4186     0.3814     0.4528
+S8                 0.8168     0.0788     0.8181     0.7401     0.8929
+
+chi2_KiDS (mean)  = 258.9  /  270 data points
+chi2/dof          = 0.959
+Effective samples = 47894
+Accepted steps    = 10880
+
+Likelihoods: KiDS-1000 (Asgari+21) cosmic shear xi+/xi-
+Theory: CosmoPower emulator (hi_class + CAMB HMcode + ReACT eftus)
+Sampler: cobaya MCMC, seed=43

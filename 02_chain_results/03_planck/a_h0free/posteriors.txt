@@ -1,0 +1,20 @@
+DGF Planck CMB — H0 Free
+R-1 = 0.07 | 3205 steps
+
+             H0 = 65.7335 +/- 0.3130
+      omega_cdm = 0.1190 +/- 0.0009
+           logA = 3.0174 +/- 0.0500
+       A_planck = 0.9890 +/- 0.0245
+            A_s = 0.0000 +/- 0.0000
+         sigma8 = 0.8090 +/- 0.0202
+        Omega_m = 0.3288 +/- 0.0053
+      chi2__CMB = 1007.3751 +/- 7.2847
+  minuslogprior = -0.7340 +/- 0.0000
+minuslogprior__0 = -0.7340 +/- 0.0000
+           chi2 = 1007.3751 +/- 7.2847
+chi2__planck_2018_highl_plik.TTTEEE_lite = 582.5938 +/- 7.1925
+chi2__planck_2018_lowl.TT_clik = 28.7606 +/- 0.8285
+chi2__planck_2018_lowl.EE_clik = 396.0207 +/- 0.0285
+
+H0 = 65.73 +/- 0.31
+DGF prediction: 72.1 | Planck LCDM: 67.36

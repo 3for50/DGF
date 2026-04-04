@@ -1,0 +1,4 @@
+DGF CHANNEL DIAGNOSTIC v2 (with light-channel published)
+Global weighted b = -0.6642 ± 0.2521
+Significance: 2.6σ
+Overall H0 = 68.09

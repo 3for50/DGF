@@ -1,0 +1,78 @@
+# CONNECT NN Chain — LCDM + Planck 2018 (FULL) + DESI BAO
+# GPU-accelerated with FULL Planck likelihood (all nuisance parameters)
+# NO clik needed — pure Python implementation
+
+theory:
+  CosmoConnect:
+    path: /home/joe-research/connect/mcmc_plugin
+    extra_args:
+      connect_model: lcdm_kids1000_gpu_model_run1
+      output: tCl,pCl,lCl
+
+likelihood:
+  # Planck 2018 CMB — FULL likelihoods (NOT lite versions!)
+  # Native Python implementation — NO clik installation needed
+  
+  # Low-ell ( Commander)
+  planck_2018_lowl.TT: null                    # Low-ell temperature
+  planck_2018_lowl.EE: null                    # Low-ell polarization
+  
+  # High-ell (CamSpec FULL — includes all nuisance parameters)
+  planck_2018_highl_CamSpec.TTTEEE: null       # FULL CamSpec (not lite!)
+  # Alternative: planck_NPIPE_highl_CamSpec.TTTEEE  (PR4, latest)
+  
+  # Lensing
+  planck_2018_lensing.native: null             # CMB lensing (native)
+  
+  # DESI 2024 BAO
+  bao.desi_2024_bao_all: null
+
+params:
+  # Cosmological parameters (6-parameter LCDM)
+  omega_b:
+    prior:
+      min: 0.019
+      max: 0.026
+    proposal: 0.0002
+    latex: \Omega_b h^2
+  omega_cdm:
+    prior:
+      min: 0.08
+      max: 0.2
+    proposal: 0.002
+    latex: \Omega_c h^2
+  H0:
+    prior:
+      min: 60
+      max: 80
+    proposal: 1.0
+    latex: H_0
+  n_s:
+    prior:
+      min: 0.9
+      max: 1.1
+    proposal: 0.005
+    latex: n_s
+  logA:
+    prior:
+      min: 2.5
+      max: 3.8
+    proposal: 0.02
+    latex: \ln(10^{10}A_s)
+  tau_reio:
+    value: 0.054
+    latex: \tau_{reio}
+  
+  # Planck CamSpec nuisance parameters (auto-added by cobaya)
+  # These include: calibration, beam uncertainties, etc.
+  # Full list will be printed when you run cobaya-run
+
+sampler:
+  mcmc:
+    learn_proposal: true
+    max_samples: 20000
+    max_tries: 50000
+    seed: 42
+
+output: /home/joe-research/chains/connect_full_lcdm
+packages_path: /home/joe-research/dgf_data

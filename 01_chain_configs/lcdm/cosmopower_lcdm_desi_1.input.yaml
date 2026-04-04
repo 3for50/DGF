@@ -1,0 +1,65 @@
+theory:
+  cptheory.CosmoPower:
+    python_path: /home/joe-research/cobaya-cosmopower
+    network_path: /home/joe-research/cosmopower_models/trained_models
+    cmb_tt_nn_filename: lcdm_production_v1
+likelihood:
+  bao.desi_2024_bao_all: null
+params:
+  omega_b:
+    prior:
+      min: 0.021
+      max: 0.024
+    ref:
+      dist: norm
+      loc: 0.0224
+      scale: 0.0002
+    proposal: 0.0002
+  omega_cdm:
+    prior:
+      min: 0.1
+      max: 0.14
+    ref:
+      dist: norm
+      loc: 0.12
+      scale: 0.002
+    proposal: 0.002
+  h:
+    prior:
+      min: 0.65
+      max: 0.72
+    ref:
+      dist: norm
+      loc: 0.674
+      scale: 0.01
+    proposal: 0.01
+  n_s:
+    prior:
+      min: 0.95
+      max: 0.99
+    ref:
+      dist: norm
+      loc: 0.966
+      scale: 0.005
+    proposal: 0.005
+  logA:
+    prior:
+      min: 3.0
+      max: 3.1
+    ref:
+      dist: norm
+      loc: 3.04
+      scale: 0.02
+    proposal: 0.02
+  tau_reio:
+    value: 0.054
+  rdrag:
+    value: 147.09
+    latex: r_{drag}
+sampler:
+  mcmc:
+    learn_proposal: true
+    max_samples: 20000
+    seed: 42
+output: cosmopower_lcdm_desi_1
+packages_path: /home/joe-research/dgf_data

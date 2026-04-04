@@ -1,0 +1,12 @@
+FOUR VALIDATION PIPELINES — RESULTS
+=======================================================
+
+Pipeline 2: FRB tracker ready at /home/joe-research/dgf_validation/frb_tracker.py
+Pipeline 3: TT l=2 suppression: -28.4%
+            Lensing l=2 enhancement: +58.9%
+Pipeline 4: DSPL pipeline ready at /home/joe-research/dgf_validation/dspl_pipeline.py
+
+Pipeline 1 (Pantheon+) running separately.
+
+Pipeline 1 FINAL: DGF chi2=697.6, LCDM chi2=702.1, Dchi2=+4.5
+  Free w0=-0.905

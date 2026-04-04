@@ -1,0 +1,2 @@
+origin	https://github.com/EFTCAMB/EFTCAMB (fetch)
+origin	https://github.com/EFTCAMB/EFTCAMB (push)

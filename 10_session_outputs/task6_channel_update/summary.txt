@@ -1,0 +1,15 @@
+DGF CHANNEL DIAGNOSTIC (with published H0 measurements)
+============================================================
+
+Weighted mean b = -0.5815 ± 0.2982
+Sign: LIGHT-BIASED
+Significance: 1.9σ from zero
+
+Category breakdown:
+  MCMC         (n= 6): mean b = -1.0434 ± 0.4264
+  Theory       (n= 2): mean b = +0.0024 ± 1.4142
+  Published    (n= 7): mean b = -0.1529 ± 0.4367
+
+Total results: 16
+Total weight: 11
+Overall weighted H0: 68.26

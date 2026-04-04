@@ -1,0 +1,17 @@
+BBN-pure BAO chains — ANALYTIC rdrag (NO CAMB)
+=======================================================
+omega_b = 0.02235 (Cooke+18 BBN)
+DGF w0 = -0.933
+
+
+EH98:
+  H0 = 61.40 +/- 0.79
+  rdrag = 162.57 Mpc
+  Omega_m = 0.3055
+  b = -3.889
+
+HS96:
+  H0 = 64.82 +/- 0.75
+  rdrag = 154.17 Mpc
+  Omega_m = 0.3032
+  b = -2.240

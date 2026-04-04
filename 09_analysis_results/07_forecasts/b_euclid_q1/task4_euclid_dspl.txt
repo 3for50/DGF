@@ -1,0 +1,18 @@
+Task 4 — Euclid DSPL Pipeline Check
+=====================================
+
+Result: Q1 remains the only available DSPL data.
+
+Euclid Q1 (March 2025): 4 galaxy-scale DSPL candidates from 63 deg^2.
+  - Paper: arXiv:2503.15327 (Strong Lensing Discovery Engine D)
+  - Consistent with forecast of 6 +/- 3 DSPLs in Q1 area
+
+No new DSPL systems have been released since Q1.
+
+Euclid DR1 (late 2026): Will cover 1900 deg^2 (~30x Q1 area).
+  - Expected ~100+ DSPL systems
+  - Will enable statistically meaningful beta distribution test
+  - Target: beta vs DGF w0=-0.933 prediction
+
+Until DR1, the Q1 4-system sample is too small for a robust
+beta distribution constraint on w0.

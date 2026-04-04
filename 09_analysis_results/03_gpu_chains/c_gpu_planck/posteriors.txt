@@ -1,0 +1,11 @@
+GPU Planck Chain (DGF C_l emulator, RTX 3060)
+==================================================
+PCA emulator: 20 components, 0.09% TT error
+
+            H0 = 65.0616 +/- 0.1633
+     omega_cdm = 0.1194 +/- 0.0005
+          logA = 2.8839 +/- 0.0248
+      A_planck = 1.0830 +/- 0.0136
+       Omega_m = 0.3363 +/- 0.0028
+
+  b = -2.125 | Time: 409s

@@ -1,0 +1,98 @@
+# CONNECT NN Chain — LCDM + Planck 2018 Low-ell + DESI BAO
+# GPU-accelerated with CONNECT emulator
+# CORRECT cobaya syntax from CONNECT documentation
+
+theory:
+  CosmoConnect:
+    ignore_obsolete: True
+    path: /home/joe-research/connect/mcmc_plugin/cobaya
+    python_path: /home/joe-research/connect/mcmc_plugin/cobaya
+    extra_args:
+      connect_model: lcdm_kids1000_gpu_model_run1
+      output: tCl
+      l_max_scalars: 500  # Model trained up to ell=499
+
+likelihood:
+  # Planck 2018 CMB — LOW-ELL ONLY (ell=2-29, within model range)
+  # Native Python implementation — NO clik needed
+  planck_2018_lowl.TT: null                    # Low-ell temperature (ell=2-29)
+  planck_2018_lowl.EE: null                    # Low-ell polarization (ell=2-29)
+  
+  # NOTE: High-ell likelihoods DISABLED — NN model lacks sufficient ell range
+  # For full Planck, need NN retrained with l_max_scalars=2500+
+  
+  # DESI 2024 BAO — Modern large-scale structure
+  bao.desi_2024_bao_all: null
+
+params:
+  # Cosmological parameters (6-parameter LCDM)
+  # Based on HPC converged runs with reference values
+  omega_b:
+    prior:
+      min: 0.021
+      max: 0.024
+    ref:
+      dist: norm
+      loc: 0.0224
+      scale: 0.0002
+    proposal: 0.0002
+    latex: \Omega_b h^2
+  omega_cdm:
+    prior:
+      min: 0.10
+      max: 0.14
+    ref:
+      dist: norm
+      loc: 0.12
+      scale: 0.002
+    proposal: 0.002
+    latex: \Omega_c h^2
+  H0:
+    prior:
+      min: 65
+      max: 72
+    ref:
+      dist: norm
+      loc: 67.4
+      scale: 1.0
+    proposal: 1.0
+    latex: H_0
+  n_s:
+    prior:
+      min: 0.95
+      max: 0.99
+    ref:
+      dist: norm
+      loc: 0.966
+      scale: 0.005
+    proposal: 0.005
+    latex: n_s
+  logA:
+    prior:
+      min: 3.0
+      max: 3.1
+    ref:
+      dist: norm
+      loc: 3.04
+      scale: 0.02
+    proposal: 0.02
+    latex: \ln(10^{10}A_s)
+  
+  # Map to CLASS parameter name
+  ln10^{10}A_s:
+    value: 'lambda logA: logA'
+    derived: False
+  tau_reio:
+    value: 0.054
+    latex: \tau_{reio}
+
+sampler:
+  mcmc:
+    learn_proposal: true
+    max_samples: 20000
+    max_tries: 50000
+    seed: 42
+    burn_in: 500
+
+output: /home/joe-research/chains/connect_lcdm_plancklow_desi
+packages_path: /home/joe-research/dgf_data

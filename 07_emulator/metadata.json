@@ -1,0 +1,17 @@
+{
+  "param_names": [
+    "H0",
+    "omega_cdm",
+    "logA",
+    "alpha_B_scale"
+  ],
+  "n_new": 500,
+  "n_old": 2000,
+  "n_merged": 2500,
+  "alpha_B_range": [
+    0.1,
+    2.0
+  ],
+  "n_failed": 0,
+  "generation_time_min": 24.5
+}

@@ -1,0 +1,38 @@
+DGF ANALYSIS SESSIONS — Diagnostics, Tests, and Exploratory Work
+=================================================================
+
+01_h0_tension/               H0 tension and Flash Field analysis
+  a_flash_field/             J6: F_arith=69.09+/-0.76, 0.50sigma from 69.47
+  b_flash_field_tdcosmo/     J6 with TDCOSMO prior: F_arith=69.51, 0.04sigma
+  c_channel_diagnostic/      Full b=(H0-69.47)/2.075 diagnostic, all measurements
+  d_h0_landscape/            H0 landscape comparison plots
+
+02_alpha_transfer/           alpha = dH0/d(alpha_B) measurement
+  a_emulator_v1/             First run: alpha=+0.194, r(H0,aB)=0.24
+  b_emulator_v2/             (pending) Retrained with dedicated alpha_B grid
+
+03_gpu_chains/               GPU-accelerated chains (JAX/NumPyro, RTX 3060)
+  a_bao_bbn/                 Chains A-G: BAO+BBN variants, 23s each
+  b_joint_J1_J5/             Joint chains: J1 (CMB), J2 (BAO+CMB+fsig8), J3-J5
+  c_gpu_planck/              PCA emulator Planck chain
+
+04_bayesian_evidence/        Nested sampling: ln(B) DGF vs LCDM vs wCDM
+
+05_lowl_cmb/                 Low-l CMB multipole analysis
+  a_planck_lowl_comparison/  DGF vs LCDM at l=2-30, sign pattern, chi2
+
+06_diagnostics/              Model consistency tests
+  a_three_tests/             Coupling stability, sigma8 separation, A_lens
+  b_three_extractions/       Parameter extraction comparisons
+  c_three_diagnostics/       Summary diagnostics
+  d_kam_coupling/            KAM coupling comparison
+  e_light_channel/           Light channel FRB + Pantheon tests
+
+07_forecasts/                Future survey predictions
+  a_euclid_forecast/         Fisher forecast: 209sigma detection significance
+  b_euclid_q1/               Q1 DSPL Einstein radii comparison
+  c_four_pipelines/          FRB tracker + Pantheon + pipelines
+
+08_theory_plots/             DGF theory visualisations (ISW, P(k), geometry)
+
+09_logs/                     Training and generation logs

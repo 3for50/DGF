@@ -1,0 +1,28 @@
+DGF training data — hi_class native halofit (no CAMB, no ReACT)
+Parameter ranges (focused on posterior):
+  omega_cdm: (0.08, 0.3)
+  ln10A_s:   (1.9, 2.5)
+Generating 500 training + 100 test samples
+Workers: 8, k points: 300, k_max: 50.0
+
+--- train set (500 samples) ---
+  50/500 done  (failed: 0)
+  100/500 done  (failed: 0)
+  150/500 done  (failed: 0)
+  200/500 done  (failed: 0)
+  250/500 done  (failed: 0)
+  300/500 done  (failed: 0)
+  350/500 done  (failed: 0)
+  400/500 done  (failed: 0)
+  450/500 done  (failed: 0)
+  500/500 done  (failed: 0)
+  Successful: 500  Failed: 0
+  Saved to /home/joe-research/dgf_training/data_hiclass_halofit/train_*.npy
+
+--- test set (100 samples) ---
+  50/100 done  (failed: 0)
+  100/100 done  (failed: 0)
+  Successful: 100  Failed: 0
+  Saved to /home/joe-research/dgf_training/data_hiclass_halofit/test_*.npy
+
+Done.

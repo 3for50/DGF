@@ -1,0 +1,9 @@
+J6 — Flash Field (TDCOSMO prior N(73.3, 1.7))
+============================================================
+  H0 (light)     = 65.7217 ± 0.2733
+  H0_matter       = 73.2924 ± 1.6783
+  F_arithmetic    = 69.5071 ± 0.8439
+  F_weighted      = 65.9112 ± 0.2678
+  F_arith from 69.47: 0.04σ
+  Gap: +3.60 km/s/Mpc
+  b_arithmetic: +0.0179

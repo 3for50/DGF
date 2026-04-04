@@ -1,0 +1,58 @@
+# ============================================================
+# DGF — DESI 2024 BAO, H0 Free (w0 fixed at -0.933)
+# Question: What H0 does DESI prefer with DGF's w0?
+# ============================================================
+
+theory:
+  dgf_cosmopower_theory.DGFCosmoPower:
+    python_path: /home/joe-research/dgf_training
+
+likelihood:
+  bao.desi_2024_bao_all: null
+
+params:
+  omega_cdm:
+    prior: {min: 0.01, max: 0.99}
+    ref:   {dist: norm, loc: 0.12, scale: 0.01}
+    proposal: 0.002
+    latex: \omega_{\rm cdm}
+
+  H0:
+    prior: {min: 50.0, max: 90.0}
+    ref:   {dist: norm, loc: 72.1, scale: 3.0}
+    proposal: 1.0
+    latex: H_0
+
+  # ── Fixed ─────────────────────────────────────────────
+  ln10A_s:  {value: 2.294}
+  omega_b:  {value: 0.02238280}
+  n_s:      {value: 0.9660499}
+  tau_reio: {value: 0.054}
+  A_bary:   {value: 0.59}
+  A_IA:     {value: 0.0}
+
+  # ── Derived ───────────────────────────────────────────
+  sigma8:
+    derived: true
+    latex: \sigma_8
+  Omega_m:
+    derived: true
+    latex: \Omega_m
+  rdrag:
+    derived: true
+    latex: r_{\rm drag}
+
+sampler:
+  mcmc:
+    learn_proposal: true
+    learn_proposal_Rminus1_max: 2.0
+    max_samples: 30000
+    max_tries: 100000
+    Rminus1_stop: 0.01
+    Rminus1_cl_stop: 0.2
+    seed: 45
+    output_every: 60s
+    learn_every: 40d
+
+output: /home/joe-research/chains/dgf_desi_h0free_only
+packages_path: /home/joe-research/dgf_data

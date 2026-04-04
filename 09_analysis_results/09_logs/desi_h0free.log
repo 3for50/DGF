@@ -1,0 +1,116 @@
+[mcmc] Learn + convergence test @ 1360 samples accepted.
+[mcmc]  - Acceptance rate: 0.300
+[mcmc]  - Convergence of means: R-1 = 0.043059 after 1088 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-04-02 00:34:14 : 4502 steps taken, and 1376 accepted.
+[mcmc] Progress @ 2026-04-02 00:35:15 : 4561 steps taken, and 1390 accepted.
+[mcmc] Progress @ 2026-04-02 00:36:15 : 4619 steps taken, and 1412 accepted.
+[mcmc] Progress @ 2026-04-02 00:37:16 : 4678 steps taken, and 1434 accepted.
+[mcmc] Learn + convergence test @ 1440 samples accepted.
+[mcmc]  - Acceptance rate: 0.301
+[mcmc]  - Convergence of means: R-1 = 0.018823 after 1152 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-04-02 00:38:17 : 4736 steps taken, and 1449 accepted.
+[mcmc] Progress @ 2026-04-02 00:39:17 : 4795 steps taken, and 1467 accepted.
+[mcmc] Progress @ 2026-04-02 00:40:17 : 4854 steps taken, and 1482 accepted.
+[mcmc] Progress @ 2026-04-02 00:41:17 : 4911 steps taken, and 1491 accepted.
+[mcmc] Progress @ 2026-04-02 00:42:18 : 4970 steps taken, and 1509 accepted.
+[mcmc] Learn + convergence test @ 1520 samples accepted.
+[mcmc]  - Acceptance rate: 0.298
+[mcmc]  - Convergence of means: R-1 = 0.013476 after 1216 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-04-02 00:43:18 : 5029 steps taken, and 1529 accepted.
+[mcmc] Progress @ 2026-04-02 00:44:19 : 5087 steps taken, and 1546 accepted.
+
+[mcmc] Progress @ 2026-04-02 00:45:19 : 5147 steps taken, and 1562 accepted.
+[mcmc] Progress @ 2026-04-02 00:46:19 : 5204 steps taken, and 1580 accepted.
+[mcmc] Progress @ 2026-04-02 00:47:20 : 5262 steps taken, and 1593 accepted.
+[mcmc] Learn + convergence test @ 1600 samples accepted.
+[mcmc]  - Acceptance rate: 0.296
+[mcmc]  - Convergence of means: R-1 = 0.012786 after 1280 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-04-02 00:48:20 : 5319 steps taken, and 1611 accepted.
+[mcmc] Progress @ 2026-04-02 00:49:21 : 5376 steps taken, and 1629 accepted.
+[mcmc] Progress @ 2026-04-02 00:50:21 : 5430 steps taken, and 1643 accepted.
+[mcmc] Progress @ 2026-04-02 00:51:22 : 5484 steps taken, and 1656 accepted.
+[mcmc] Progress @ 2026-04-02 00:52:22 : 5542 steps taken, and 1679 accepted.
+[mcmc] Learn + convergence test @ 1680 samples accepted.
+[mcmc]  - Acceptance rate: 0.296
+[mcmc]  - Convergence of means: R-1 = 0.014323 after 1344 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-04-02 00:53:23 : 5600 steps taken, and 1700 accepted.
+[mcmc] Progress @ 2026-04-02 00:54:24 : 5657 steps taken, and 1724 accepted.
+[mcmc] Progress @ 2026-04-02 00:55:24 : 5714 steps taken, and 1741 accepted.
+[mcmc] Progress @ 2026-04-02 00:56:25 : 5772 steps taken, and 1759 accepted.
+[mcmc] Learn + convergence test @ 1760 samples accepted.
+[mcmc]  - Acceptance rate: 0.298
+[mcmc]  - Convergence of means: R-1 = 0.010956 after 1408 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-04-02 00:57:25 : 5829 steps taken, and 1769 accepted.
+[mcmc] Progress @ 2026-04-02 00:58:25 : 5885 steps taken, and 1784 accepted.
+[mcmc] Progress @ 2026-04-02 00:59:26 : 5943 steps taken, and 1803 accepted.
+[mcmc] Progress @ 2026-04-02 01:00:27 : 5994 steps taken, and 1814 accepted.
+[mcmc] Progress @ 2026-04-02 01:01:27 : 6047 steps taken, and 1831 accepted.
+[mcmc] Learn + convergence test @ 1840 samples accepted.
+[mcmc]  - Acceptance rate: 0.296
+[mcmc]  - Convergence of means: R-1 = 0.017454 after 1472 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-04-02 01:02:27 : 6103 steps taken, and 1846 accepted.
+[mcmc] Progress @ 2026-04-02 01:03:28 : 6159 steps taken, and 1865 accepted.
+[mcmc] Progress @ 2026-04-02 01:04:28 : 6213 steps taken, and 1883 accepted.
+[mcmc] Progress @ 2026-04-02 01:05:28 : 6255 steps taken, and 1894 accepted.
+[mcmc] Progress @ 2026-04-02 01:06:29 : 6299 steps taken, and 1908 accepted.
+[mcmc] Learn + convergence test @ 1920 samples accepted.
+[mcmc]  - Acceptance rate: 0.297
+[mcmc]  - Convergence of means: R-1 = 0.017053 after 1536 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-04-02 01:07:29 : 6345 steps taken, and 1930 accepted.
+[mcmc] Progress @ 2026-04-02 01:08:30 : 6390 steps taken, and 1945 accepted.
+[mcmc] Progress @ 2026-04-02 01:09:31 : 6435 steps taken, and 1964 accepted.
+[mcmc] Progress @ 2026-04-02 01:10:32 : 6481 steps taken, and 1974 accepted.
+[mcmc] Progress @ 2026-04-02 01:11:32 : 6524 steps taken, and 1988 accepted.
+[mcmc] Learn + convergence test @ 2000 samples accepted.
+[mcmc]  - Acceptance rate: 0.299
+[mcmc]  - Convergence of means: R-1 = 0.019800 after 1600 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-04-02 01:12:32 : 6569 steps taken, and 2003 accepted.
+[mcmc] Progress @ 2026-04-02 01:13:32 : 6614 steps taken, and 2014 accepted.
+[mcmc] Progress @ 2026-04-02 01:14:32 : 6659 steps taken, and 2023 accepted.
+[mcmc] Progress @ 2026-04-02 01:15:33 : 6705 steps taken, and 2039 accepted.
+[mcmc] Progress @ 2026-04-02 01:16:33 : 6751 steps taken, and 2054 accepted.
+[mcmc] Progress @ 2026-04-02 01:17:34 : 6798 steps taken, and 2072 accepted.
+[mcmc] Learn + convergence test @ 2080 samples accepted.
+[mcmc]  - Acceptance rate: 0.299
+[mcmc]  - Convergence of means: R-1 = 0.016518 after 1664 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-04-02 01:18:35 : 6844 steps taken, and 2090 accepted.
+[mcmc] Progress @ 2026-04-02 01:19:36 : 6891 steps taken, and 2100 accepted.
+[mcmc] Progress @ 2026-04-02 01:20:37 : 6936 steps taken, and 2116 accepted.
+[mcmc] Progress @ 2026-04-02 01:21:37 : 6981 steps taken, and 2130 accepted.
+[mcmc] Progress @ 2026-04-02 01:22:38 : 7027 steps taken, and 2144 accepted.
+[mcmc] Progress @ 2026-04-02 01:23:39 : 7072 steps taken, and 2158 accepted.
+[mcmc] Learn + convergence test @ 2160 samples accepted.
+[mcmc]  - Acceptance rate: 0.298
+[mcmc]  - Convergence of means: R-1 = 0.010205 after 1728 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-04-02 01:24:39 : 7116 steps taken, and 2165 accepted.
+[mcmc] Progress @ 2026-04-02 01:25:39 : 7162 steps taken, and 2181 accepted.
+[mcmc] Progress @ 2026-04-02 01:26:40 : 7208 steps taken, and 2198 accepted.
+[mcmc] Progress @ 2026-04-02 01:27:41 : 7263 steps taken, and 2213 accepted.
+[mcmc] Progress @ 2026-04-02 01:28:42 : 7322 steps taken, and 2229 accepted.
+[mcmc] Learn + convergence test @ 2240 samples accepted.
+[mcmc]  - Acceptance rate: 0.298
+[mcmc]  - Convergence of means: R-1 = 0.009463 after 1792 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-04-02 01:29:43 : 7381 steps taken, and 2246 accepted.
+[mcmc] Progress @ 2026-04-02 01:30:43 : 7439 steps taken, and 2265 accepted.
+[mcmc] Progress @ 2026-04-02 01:31:44 : 7498 steps taken, and 2286 accepted.
+[mcmc] Progress @ 2026-04-02 01:32:45 : 7559 steps taken, and 2296 accepted.
+[mcmc] Progress @ 2026-04-02 01:33:46 : 7618 steps taken, and 2308 accepted.
+[mcmc] Learn + convergence test @ 2320 samples accepted.
+[mcmc]  - Acceptance rate: 0.296
+[mcmc]  - Convergence of means: R-1 = 0.007596 after 1856 accepted steps
+[mcmc]  - Convergence of bounds: R-1 = 0.091759 after 2320 accepted steps
+[mcmc] The run has converged!
+[mcmc] Sampling complete after 2320 accepted steps.
+[?2004h(dgf_env) [01;32mjoe-research@joe-research-B550M-ac[00m:[01;34m~/chains[00m$ 

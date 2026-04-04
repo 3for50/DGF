@@ -1,0 +1,23 @@
+J6 — Flash Field Equilibrium Test
+=================================================================
+Light channel: Planck TTTEEE + low-l TT/EE (DGF hi_class, H0 free)
+Matter channel: N(72.5, 1.5) combined corpus prior
+Effective samples: 2244
+
+            H0 (light) = 65.7217 +/- 0.2733  (68% CI: [65.4301, 66.0131])
+             H0_matter = 72.4517 +/- 1.4893  (68% CI: [70.9516, 73.9499])
+             omega_cdm = 0.1190 +/- 0.0008  (68% CI: [0.1181, 0.1199])
+                  logA = 3.0028 +/- 0.0507  (68% CI: [2.9527, 3.0562])
+              A_planck = 0.9818 +/- 0.0248  (68% CI: [0.9573, 1.0087])
+                sigma8 = 0.8032 +/- 0.0201  (68% CI: [0.7826, 0.8229])
+               Omega_m = 0.3289 +/- 0.0046  (68% CI: [0.3240, 0.3338])
+          F_arithmetic = 69.0867 +/- 0.7603  (68% CI: [68.2999, 69.8478])
+            F_weighted = 65.8279 +/- 0.2706  (68% CI: [65.5365, 66.1142])
+
+  F_arithmetic from 69.47: 0.50σ
+  F_weighted from 69.47:   13.5σ
+  Gap (arith - weighted):  +3.26 km/s/Mpc
+  r(H0, H0_matter):        0.0241
+  b_arithmetic:            -0.1847
+  b_weighted:              -1.7552
+  Precision ratio:         62.3:1

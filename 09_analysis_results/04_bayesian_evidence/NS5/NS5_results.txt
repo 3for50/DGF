@@ -1,0 +1,43 @@
+NS5 — Definitive Bayesian Evidence (omega_b free)
+============================================================
+
+ΛCDM verification (Step 1):
+            H0 = 66.99878 +/- 0.33358
+     omega_cdm = 0.11744 +/- 0.00092
+          logA = 3.12867 +/- 0.05883
+      A_planck = 0.96745 +/- 0.02855
+       omega_b = 0.02238 +/- 0.00015
+  Accept rate: 0.055
+
+ln(Z_DGF)   = -107.73
+ln(Z_LCDM)  = -188.28
+ln(Z_wfree) = -112.00
+
+ln(B) DGF vs LCDM:    +80.55 [Decisive]
+ln(B) DGF vs wfree:   +4.27 [Strong]
+
+
+NS5a_DGF:
+  ln(Z) = -107.73, time = 53s
+            H0 = 65.77724 +/- 0.28648
+     omega_cdm = 0.11901 +/- 0.00079
+          logA = 3.07628 +/- 0.02695
+      A_planck = 0.98565 +/- 0.01406
+       omega_b = 0.02236 +/- 0.00015
+
+NS5b_LCDM:
+  ln(Z) = -188.28, time = 59s
+            H0 = 67.00195 +/- 0.31976
+     omega_cdm = 0.11737 +/- 0.00088
+          logA = 3.17027 +/- 0.02511
+      A_planck = 0.94733 +/- 0.01207
+       omega_b = 0.02238 +/- 0.00015
+
+NS5c_wfree:
+  ln(Z) = -112.00, time = 105s
+            H0 = 65.95933 +/- 0.31211
+     omega_cdm = 0.11898 +/- 0.00079
+          logA = 3.06345 +/- 0.03042
+      A_planck = 0.99083 +/- 0.01581
+       omega_b = 0.02236 +/- 0.00015
+            w0 = -0.92307 +/- 0.00671
