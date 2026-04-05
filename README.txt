@@ -133,5 +133,4 @@ TO REPRODUCE
 3. Run any chain:
    cobaya-run 01_chain_configs/dgf/dgf_planck_h0free.yaml
 
-4. Or use CosmoSIS TUI:
-   cd 11_cosmosis && ./run.sh
+
